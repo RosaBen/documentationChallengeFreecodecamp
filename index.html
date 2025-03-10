@@ -5,57 +5,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Technical Documentation</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  
 </head>
 
 <body>
-
-  <main id="main-doc">
-
     <nav id="navbar">
 
-      <header>
+      <header class="logo">
         <h1>Web Dev Languages</h1>
       </header>
-<a href="#JavaScript" class="nav-link">JavaScript</a>
+      <button class="menu-toggle">&#9776;</button>
+<div class="nav-links">
+    <a href="#JavaScript" class="nav-link">JavaScript</a>
 <a href="#Java" class="nav-link">Java</a>
 <a href="#Python" class="nav-link">Python</a>
 <a href="#Rust" class="nav-link">Rust</a>
 <a href="#Angular" class="nav-link">Angular</a>
+</div>
 
     </nav>
-
+<main id="main-doc">
     <section class="main-section" id="JavaScript">
       <header>
         <h2>JavaScript</h2>
+        </header>
         <p>JavaScript was initially created to “make web pages alive”.</p>
         <p>The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.</p>
         <p>Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.</p>
         <p>In this aspect, JavaScript is very different from another language called Java.</p>
         <code>
-            <p> alert( 'Hello, world!' ); </p>
+            alert( 'Hello, world!' );
         </code>
-        <h3>Summary</h3>
+<div class="key-points">
+            <h3>Summary</h3>
         <ul>
             <li>JavaScript was initially created as a browser-only language, but it is now used in many other environments as well.</li>
             <li>Today, JavaScript has a unique position as the most widely-adopted browser language, fully integrated with HTML/CSS.</li>
             <li>There are many languages that get “transpiled” to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.</li>
         </ul>
-      </header>
+</div>
     </section>
+    <hr>
     <section class="main-section" id="Java">
       <header>
         <h2>Java</h2>
+        </header>
         <p>Java is a high-level, general-purpose, memory-safe, object-oriented programming language.</p>
         <p>Java was designed by James Gosling at Sun Microsystems.</p>
         <code>
-            <p> public class HelloWorld { </p>
-            <p> public static void main(String[] args) { </p>
-            <p> System.out.println("Hello, World!"); </p>
-            <p> } </p>
-            <p> } </p>
+             System.out.println("Hello, World!");
         </code>
-        <h3>Principles</h3>
+<div class="key-points">
+            <h3>Principles</h3>
         <p>There were five primary goals in creating the Java language: </p>
         <ol>
             <li>It must be simple, object-oriented, and familiar.</li>
@@ -64,18 +66,20 @@
             <li>It must execute with high performance.</li>
             <li>It must be interpreted, threaded, and dynamic.</li>
         </ol>
-      </header>
+</div>
     </section>
-
+<hr>
     <section class="main-section" id="Python">
       <header>
         <h2>Python</h2>
+        </header>
         <p>Python is a high-level, versatile programming language known for its readability and simplicity.</p>
         <p>It is widely used in web development, data science, artificial intelligence, automation, and more. Python’s vast ecosystem of libraries makes it a popular choice for beginners and experts alike.</p>
         <code>
-            <p> print("Hello, World!") </p>
+             print("Hello, World!") 
         </code>
-        <h3>Key Points About Python: </h3>
+<div class="key-points">
+            <h3>Key Points About Python: </h3>
         <ul>
             <li>Easy to learn &amp; use – Simple syntax, beginner-friendly</li>
             <li>Interpreted &amp dynamically typed – No need for compilation, flexible coding</li>
@@ -84,21 +88,20 @@
             <li>Cross-platform – Runs on Windows, macOS, Linux, etc.</li>
             <li>Large community – Strong support and resources available</li>
         </ul>
-      </header>
+</div>
     </section>
-
+<hr>
     <section class="main-section" id="Rust">
       <header>
         <h2>Rust</h2>
+        </header>
         <p>Rust is a high-performance and memory-safe programming language designed to prevent common memory errors found in C/C++.</p>
         <p>It is widely used in system development, embedded programming, and applications requiring high performance. Its memory management model, without a garbage collector, makes it ideal for critical software.</p>
         <code>
-            <p> fn main() { </p>
-            <p> println!("Hello, World!"); </p>
-            <p> } </p>
+             println!("Hello, World!"); 
         </code>
-
-        <h3>Key Points About Rust</h3>
+<div class="key-points">
+           <h3>Key Points About Rust</h3>
         <ul>
             <li>Memory safety – Prevents memory leaks and errors without a garbage collector</li>
             <li>High performance – As fast as C/C++</li>
@@ -108,22 +111,21 @@
             <li>Interoperability – Can integrate with C and WebAssembly</li>
             <li>Reliability – Used in critical systems (OS, blockchain, browsers)</li>
         </ul>
-      </header>
+</div>
     </section>
+    <hr>
     <section class="main-section" id="Angular">
       <header>
         <h2>Angular</h2>
-        <p>ngular is a TypeScript-based open-source framework for building dynamic web applications.</p>
+        </header>
+        <p>Angular is a TypeScript-based open-source framework for building dynamic web applications.</p>
         <p>Developed and maintained by Google, it provides a powerful ecosystem for developing scalable and maintainable single-page applications (SPAs).</p>
         <code>
-            <p> import { Component } from '@angular/core'; </p>
-            <p> @Component({ </p>
-            <p> selector: 'app-root', </p>
-            <p> template: '<h2>Hello, World!</h2>' </p>
-            <p> }) </p>
-            <p> export class AppComponent { } </p>
+            sayHello() {console.log("Hello from Angular!")}
+
         </code>
-        <h3>Key Points About Angular</h3>
+<div class="key-points">
+            <h3>Key Points About Angular</h3>
         <ul>
             <li>Component-based architecture – Modular and reusable UI components</li>
             <li>Uses TypeScript – Enhances JavaScript with static typing and OOP features</li>
@@ -134,10 +136,15 @@
             <li>Cross-platform – Used for web, mobile (Ionic), and desktop applications</li>
             <li>Strong ecosystem – Supported by Google, large community, and extensive documentation</li>
         </ul>
-      </header>
+</div>
+     
     </section>
   </main>
-
+<script>
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector(".nav-links").classList.toggle("active");
+});
+</script>
 </body>
 
 </html>
