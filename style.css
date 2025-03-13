@@ -127,7 +127,12 @@ hr{
     }
 }
 
-
+@media screen and (min-width: 375px) and (max-width: 768px){
+    code{
+        font-size: 0.5rem;
+        padding: 0.2rem 0.5rem;
+    };
+}
 
 
 
